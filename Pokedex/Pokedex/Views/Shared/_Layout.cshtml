@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Pokedex</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Pokedex.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-dark text-white">
+    
+    <header class="mb-5">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="pokedex" asp-action="Index">Pokedex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" asp-controller="pokedex" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="Pokemons" asp-action="Index">Pokemons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="PokemonRegion" asp-action="Index">Pokemons Regions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="PokemonTypes" asp-action="Index">Pokemons Type</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

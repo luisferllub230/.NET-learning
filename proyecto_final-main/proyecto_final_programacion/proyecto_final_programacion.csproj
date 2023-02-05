@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA33198C-705F-4AA9-96F0-F6BD3BF5A8A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyecto_final_programacion</RootNamespace>
+    <AssemblyName>proyecto_final_programacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente_hijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente_hijo.Designer.cs">
+      <DependentUpon>Cliente_hijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_hijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_hijo.Designer.cs">
+      <DependentUpon>Dashboard_hijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas_hijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas_hijo.Designer.cs">
+      <DependentUpon>Ventas_hijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warning.Designer.cs">
+      <DependentUpon>warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cliente_hijo.resx">
+      <DependentUpon>Cliente_hijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_hijo.resx">
+      <DependentUpon>Dashboard_hijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas_hijo.resx">
+      <DependentUpon>Ventas_hijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warning.resx">
+      <DependentUpon>warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagenEmpleado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\casita_DB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\Imagen_Ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\casita_BD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\caja_Producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagen_Compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagen_Trabajadores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagen_cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagen_proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagen_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagenCerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagenAgrandar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\imagenMinimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\Flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagen\subir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

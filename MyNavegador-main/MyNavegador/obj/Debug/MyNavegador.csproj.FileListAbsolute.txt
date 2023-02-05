@@ -1,0 +1,11 @@
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\bin\Debug\MyNavegador.exe.config
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\bin\Debug\MyNavegador.exe
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\bin\Debug\MyNavegador.pdb
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.MyNavegador.resources
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.Properties.Resources.resources
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.exe
+C:\Users\HP\Desktop\MyNavegador\MyNavegador\obj\Debug\MyNavegador.pdb
